@@ -498,7 +498,7 @@ qm set $VMID \
 
   <a href='https://ko-fi.com/D1D7EP4GF'><img src='https://img.shields.io/badge/&#x2615;-Buy me a coffee-blue' /></a>
   </div>" >/dev/null
-qm set $VMID --cpu host,kvm=off
+qm set $VMID --cpu host
 msg_ok "Created OpenWrt VM ${CL}${BL}(${HN})"
 msg_info "OpenWrt is being started in order to configure the network interfaces."
 qm start $VMID
